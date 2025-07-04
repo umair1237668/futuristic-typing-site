@@ -1,0 +1,86 @@
+/* Futuristic Neon Theme */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0a0a0a;
+  color: #00ffe7;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #111;
+  box-shadow: 0 0 10px #00ffe7;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffe7;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #00ffe7;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.cursor {
+  color: #00ffe7;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: "➤";
+  color: #00ffe7;
+  position: absolute;
+  left: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  border-top: 1px solid #00ffe7;
+}
